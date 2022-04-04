@@ -7,7 +7,8 @@ namespace GitDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test");
+            Console.WriteLine("another code");
+            Console.WriteLine("sample code");
         }
     }
 }
