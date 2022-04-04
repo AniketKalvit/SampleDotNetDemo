@@ -4,19 +4,31 @@ using System.Text;
 
 namespace GitDemo
 {
-   public class Calculation
+    public delegate int MyDelegate(int n1, int n2);
+    public delegate string MyStrDel(string name);
+    public class Calculation
     {
-        public int Addition(int a,int b)
+        public int Addition(int a, int b)
         {
             return a + b;
         }
-        public int Addition(int a, int b,int c)
+        public int Subtract(int a, int b)
         {
-            return a + b +c;
+            return a - b;
         }
-        public double Addition(int a, double b)
+
+        public int multiply(int a, int b)
         {
-            return a + b ;
+            return a * b;
         }
     }
+    public class Test
+    {
+        public string AcceptName(string name)
+        {
+            return name.ToUpper();
+                 
+        }
+    }
+
 }
